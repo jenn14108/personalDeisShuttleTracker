@@ -6,13 +6,19 @@
         /* max width 800px */
         /* max height 600 px */
         width: 250px;
-        height: 120px;
+        height: 150px;
       }
       h1 {
         font-size: 12px;
       }
+      h2,h3 {
+        font-size: 12px;
+      }
       button.center {
         margin-top: 10px;
+      }
+      div#result {
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -43,6 +49,8 @@
       </select>
       <button class="center" name="submit">Get Estimate</button>
     </div>
+    <div id="result" style="display: none">
+       <dt>Estimate Arrival Time: </dt><dd id="arrivalTime"></dd>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="popup.js"></script>

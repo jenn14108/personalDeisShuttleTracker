@@ -38,6 +38,12 @@ $(document).ready(function () {
                      res.push(result.data[0].arrivals[i].arrival_at);
                    }
                  }
+                 document.getElementById("result").style.display = "block";
+                 if (res.length > 0){
+                   document.getElementById("arrivalTime").innerHTML = res[0];
+                 } else {
+                   document.getElementById("arrivalTime").innerHTML = "No current arrivals";
+                 }
               },
                error: function(err){
                  console.log(err);
