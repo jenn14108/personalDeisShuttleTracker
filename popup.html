@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        /* max width 800px */
+        /* max height 600 px */
+        width: 250px;
+        height: 120px;
+      }
+      h1 {
+        font-size: 12px;
+      }
+      button.center {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='vanDropDown'>
+      <h1> Van Type: </h1>
+      <select name="vanType" id="selectedType">
+        <option value="4004842">Daytime Waltham Shuttle</option>
+        <option value="4004834">Evening Waltham Branvan</option>
+      </select>
+      <button name="confirm">Confirm</button>
+    </div>
+    <div id='eveningStops' style="display: none;">
+      <h2> Stop: </h2>
+      <select id="selectedStopE">
+        <option value="4144918">Rabb</option>
+        <option value="4144942">Spingold Theater</option>
+        <option value="4212026">Main/Moody Street</option>
+      </select>
+      <button class="center" name="submit">Get Estimate</button>
+    </div>
+    <div id='dayStops' style="display: none;">
+      <h3> Stop: </h3>
+      <select id="selectedStopD">
+        <option value="4144946">Theater Lot</option>
+        <option value="4212060">Waltham Library/TD Bank</option>
+        <option value="4144938">SCC</option>
+      </select>
+      <button class="center" name="submit">Get Estimate</button>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="popup.js"></script>
+</html>
